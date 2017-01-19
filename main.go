@@ -5,5 +5,5 @@ import ("./lesson2"
 )
 
 func main() {
-	lesson2.TestInterface()
+	lesson2.ThreadLearn()
 }
