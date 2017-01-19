@@ -43,3 +43,53 @@ func TestFunc() {
 	fmt.Println("===============( learn func in func )================")
 	funcInFunc()
 }
+
+func eventGenerator() func() uint {
+	i := uint(0)
+	return func() (ret uint) {
+		ret = i
+		i += 2
+		return
+	}
+}
+
+func TestEventGenerator() {
+	nextEvent := eventGenerator()
+	fmt.Println(nextEvent())
+	fmt.Println(nextEvent())
+	fmt.Println(nextEvent())
+	fmt.Println(nextEvent())
+	fmt.Println(nextEvent())
+}
+
+func Factorial(x uint) uint {
+	if x == 0 {
+		return 1
+	}
+	return x * Factorial(x-1)
+}
+
+func first() {
+	fmt.Println("1st")
+}
+
+func second() {
+	fmt.Println("2nd")
+}
+func third() {
+	fmt.Println("3rd")
+}
+
+func TestDefer() {
+	defer second()
+	first()
+	third()
+}
+
+func PanicLearn() {
+	defer func() {
+		str := recover()
+		fmt.Println("Panic message:", str)
+	}()
+	panic("PAINC")
+}
