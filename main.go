@@ -1,7 +1,9 @@
 package main
 
-import "./lesson1"
+import ("./lesson2"
+				//"fmt"
+)
 
 func main() {
-	lesson1.PointerTest2()
+	lesson2.TestInterface()
 }
