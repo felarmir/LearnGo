@@ -1,9 +1,9 @@
 package main
 
-import "./lesson4"
+import "./lesson5"
 
 //"fmt"
 
 func main() {
-	lesson4.CheckRPCWork()
+	lesson5.SimpleMutex()
 }
