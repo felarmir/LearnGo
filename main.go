@@ -1,9 +1,10 @@
 package main
 
-import ("./lesson2"
-				//"fmt"
+import (
+	"./lesson3"
+	//"fmt"
 )
 
 func main() {
-	lesson2.ThreadLearn()
+	lesson3.LearnSort()
 }
