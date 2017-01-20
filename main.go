@@ -1,10 +1,9 @@
 package main
 
-import (
-	"./lesson3"
-	//"fmt"
-)
+import "./lesson4"
+
+//"fmt"
 
 func main() {
-	lesson3.LearnSort()
+	lesson4.CheckRPCWork()
 }
