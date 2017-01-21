@@ -1,9 +1,12 @@
 package main
 
-import "./lesson5"
+import "./designpatterns"
 
 //"fmt"
 
 func main() {
-	lesson5.SimpleMutex()
+	s := designpatterns.GetInstanceSingletom()
+	var name = "Denis"
+	s.Name = name
+	designpatterns.PrintSingletonName()
 }
