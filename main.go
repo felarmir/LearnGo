@@ -1,12 +1,9 @@
 package main
 
-import "./designpatterns"
+import "./lesson1"
 
 //"fmt"
 
 func main() {
-	s := designpatterns.GetInstanceSingletom()
-	var name = "Denis"
-	s.Name = name
-	designpatterns.PrintSingletonName()
+	lesson1.PointerInterfaceTest()
 }

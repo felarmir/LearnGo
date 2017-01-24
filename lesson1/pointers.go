@@ -21,3 +21,17 @@ func PointerTest() {
 	zero(&x)
 	fmt.Println("Pointer test:", x)
 }
+
+func setMap(data *interface{}) {
+	mp := make(map[string]string)
+	mp["name"] = "Denis"
+	mp["job"] = "Developer"
+	*data = mp
+}
+
+func PointerInterfaceTest() {
+	var data interface{}
+	setMap(&data)
+	d := data.(map[string]string)
+	fmt.Println(d["name"])
+}
